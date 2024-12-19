@@ -5,7 +5,7 @@ import { Button } from './button';
 
 export function MockInvoice() {
   return (
-    <div className="relative sm:absolute sm:right-0 sm:top-0 mt-[400px] sm:mt-0">
+    <div className="relative sm:absolute sm:right-0 sm:top-0 mt-[150px] sm:mt-0">
       <motion.div 
         className="relative mx-auto bg-white rounded-lg shadow-lg max-w-sm sm:w-80 sm:rounded-xl sm:shadow-xl sm:p-6 sm:backdrop-blur-xl sm:bg-white/90 sm:border sm:border-green-100"
         initial={{ x: 50, opacity: 0 }}
