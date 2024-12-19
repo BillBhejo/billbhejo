@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import * as Icons from 'lucide-react';
-import { Button } from './ui/button';
+import { MessageSquare } from 'lucide-react';
+import { Button } from './ui/Button';
 import { MockInvoice } from './ui/MockInvoice';
 import { MockChat } from './ui/MockChat';
 
@@ -36,7 +36,7 @@ export default function Hero() {
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left">
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button icon={Icons.MessageSquare}>Start on WhatsApp</Button>
+                <Button icon={MessageSquare}>Start on WhatsApp</Button>
                 <Button variant="secondary">Watch Demo</Button>
               </div>
             </div>
@@ -50,15 +50,8 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <MockInvoice className="w-full max-w-lg mx-auto" />
-              </motion.div>
-              <motion.div 
-                className="absolute -left-12 top-1/2 -translate-y-1/2"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-              >
-                <MockChat className="w-64" />
+                <MockChat />
+                <MockInvoice />
               </motion.div>
             </div>
           </div>
