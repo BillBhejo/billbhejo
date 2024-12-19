@@ -50,23 +50,13 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <div className="sm:hidden flex flex-col gap-24">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="mx-auto"
-                  >
+                <div className="sm:hidden">
+                  <div>
                     <MockChat />
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    className="mx-auto"
-                  >
+                  </div>
+                  <div className="mt-[300px] sm:mt-0">
                     <MockInvoice />
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="hidden sm:block">
                   <MockChat />
