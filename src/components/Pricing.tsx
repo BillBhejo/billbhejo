@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { pricingTiers } from '../data/pricing';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 
 const container = {
   hidden: { opacity: 0 },
