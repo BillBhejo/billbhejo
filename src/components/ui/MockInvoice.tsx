@@ -7,7 +7,7 @@ export function MockInvoice() {
   return (
     <div className="relative sm:absolute sm:right-0 sm:top-0 mt-[20px] sm:mt-0">
       <motion.div 
-        className="relative mx-auto bg-white rounded-lg shadow-lg max-w-sm p-4 sm:w-80 sm:rounded-xl sm:shadow-xl sm:p-6 sm:backdrop-blur-xl sm:bg-white/90 sm:border sm:border-green-100"
+        className="relative mx-auto bg-white rounded-lg shadow-lg w-[340px] sm:w-80 p-4 sm:rounded-xl sm:shadow-xl sm:p-6 sm:backdrop-blur-xl sm:bg-white/90 sm:border sm:border-green-100"
         initial={{ x: 50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}
