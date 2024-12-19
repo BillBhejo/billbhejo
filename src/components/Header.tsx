@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './ui/Logo';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 
 export default function Header() {
   return (
