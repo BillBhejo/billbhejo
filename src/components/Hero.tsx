@@ -50,8 +50,15 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <MockInvoice />
-                <MockChat />
+                <MockInvoice className="w-full max-w-lg mx-auto" />
+              </motion.div>
+              <motion.div 
+                className="absolute -left-12 top-1/2 -translate-y-1/2"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+              >
+                <MockChat className="w-64" />
               </motion.div>
             </div>
           </div>
