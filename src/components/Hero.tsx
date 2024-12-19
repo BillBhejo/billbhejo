@@ -44,15 +44,24 @@ export default function Hero() {
           
           <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
             <div className="relative mx-auto w-full">
-              <motion.div 
-                className="relative"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-              >
-                <MockChat />
-                <MockInvoice />
-              </motion.div>
+              <div className="relative h-[400px] sm:h-[450px] md:h-[500px]">
+                <motion.div 
+                  className="absolute left-0 top-0 z-10 w-full max-w-[280px] sm:max-w-[320px]"
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                  <MockChat />
+                </motion.div>
+                <motion.div 
+                  className="absolute right-0 top-1/4 z-20 w-full max-w-[280px] sm:max-w-[320px]"
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                  <MockInvoice />
+                </motion.div>
+              </div>
             </div>
           </div>
         </div>
