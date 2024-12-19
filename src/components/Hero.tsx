@@ -32,7 +32,7 @@ export default function Hero() {
               <span className="block text-green-600">Right from WhatsApp</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Transform your WhatsApp chats into professional invoices instantly. Simply send your product details, and we'll generate a PDF invoice with integrated WhatsApp Pay - perfect for Indian businesses.
+              Turn your WhatsApp chats into professional invoices instantly. Simply send your product details, and get a PDF invoice with integrated WhatsApp Pay.
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left">
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -54,7 +54,7 @@ export default function Hero() {
                   <div>
                     <MockChat />
                   </div>
-                  <div className="mt-[300px] sm:mt-10">
+                  <div className="mt-[300px] sm:mt-0">
                     <MockInvoice />
                   </div>
                 </div>
