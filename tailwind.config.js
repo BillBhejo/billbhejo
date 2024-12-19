@@ -6,8 +6,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Cal Sans', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-inter)', 'system-ui', '-apple-system', 'sans-serif'],
+        cal: ['var(--font-cal)', 'system-ui', '-apple-system', 'sans-serif'],
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

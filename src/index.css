@@ -6,11 +6,17 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --font-cal: 'Cal Sans';
+    --font-inter: 'Inter';
+  }
+
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cal Sans', system-ui, sans-serif;
+    font-family: var(--font-cal), system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
   }
 }
