@@ -54,7 +54,7 @@ export default function Hero() {
                   <div>
                     <MockChat />
                   </div>
-                  <div className="mt-[300px] sm:mt-0">
+                  <div className="mt-[300px] sm:mt-10">
                     <MockInvoice />
                   </div>
                 </div>
