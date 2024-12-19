@@ -32,7 +32,7 @@ export default function Hero() {
               <span className="block text-green-600">Right from WhatsApp</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-              Turn your WhatsApp chats into professional invoices instantly. Simply send your product details, and get a PDF invoice with integrated WhatsApp Pay.
+              Turn your WhatsApp chats into professional invoices instantly. Simply send your product details and get a PDF invoice with integrated WhatsApp Pay.
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left">
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -50,13 +50,9 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                <div className="sm:hidden">
-                  <div>
-                    <MockChat />
-                  </div>
-                  <div className="mt-[300px] sm:mt-0">
-                    <MockInvoice />
-                  </div>
+                <div className="sm:hidden flex flex-col items-center space-y-4">
+                  <MockChat />
+                  <MockInvoice />
                 </div>
                 <div className="hidden sm:block">
                   <MockChat />
