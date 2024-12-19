@@ -12,11 +12,11 @@
   }
 
   html {
-    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-cal), system-ui, -apple-system, sans-serif;
+    font-family: 'Sora', sans-serif;
     letter-spacing: -0.02em;
   }
 }
