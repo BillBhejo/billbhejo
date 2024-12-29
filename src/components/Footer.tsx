@@ -1,5 +1,5 @@
-import React from 'react';
-import { Logo } from './ui/Logo';
+import React from "react";
+import { Logo } from "./ui/Logo";
 
 export default function Footer() {
   return (
@@ -8,13 +8,13 @@ export default function Footer() {
         <div className="flex justify-between items-center">
           <Logo />
           <div className="flex space-x-6">
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/privacy" className="text-gray-400 hover:text-gray-500">
               Privacy
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/terms" className="text-gray-400 hover:text-gray-500">
               Terms
             </a>
-            <a href="#" className="text-gray-400 hover:text-gray-500">
+            <a href="/contact" className="text-gray-400 hover:text-gray-500">
               Contact
             </a>
           </div>

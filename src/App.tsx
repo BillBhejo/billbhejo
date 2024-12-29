@@ -1,22 +1,19 @@
-import React from 'react';
-import { MessageSquare, FileText, CreditCard, Zap, CheckCircle, Send } from 'lucide-react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import HowItWorks from './components/HowItWorks';
-import Pricing from './components/Pricing';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Contact from "./pages/Contact";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-white">
-      <Header />
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Pricing />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
