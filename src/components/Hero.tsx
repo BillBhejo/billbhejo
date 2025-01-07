@@ -1,12 +1,31 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { MessageSquare } from "lucide-react";
-import WhatsAppIcon from "./ui/assets/WhatsappIcon";
+// import { MessageSquare } from "lucide-react";
+// import WhatsAppIcon from "./ui/assets/WhatsappIcon";
 import { Button } from "./ui/button";
 import { MockInvoice } from "./ui/MockInvoice";
 import { MockChat } from "./ui/MockChat";
+import { useForm, ValidationError } from "@formspree/react";
+import { useEffect, useState } from "react";
+import { AlertCircle } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function Hero() {
+  const [state, handleSubmit] = useForm("mzzzkqdw");
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleSuccess = () => {
+    setShowAlert(true);
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 3000);
+  };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      handleSuccess();
+    }
+  }, [state.succeeded]);
+
   return (
     <div className="pt-24 pb-16 sm:pt-32 relative overflow-hidden">
       {/* Background decoration */}
@@ -38,10 +57,43 @@ export default function Hero() {
               integrated WhatsApp Pay.
             </p>
             <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left">
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              {/* <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button icon={WhatsAppIcon}>Start on WhatsApp</Button>
                 <Button variant="secondary">Watch Demo</Button>
-              </div>
+              </div> */}
+              {showAlert && ( // Conditionally render the alert
+                <Alert variant="success">
+                  <AlertCircle className="h-4 w-4" />
+                  <AlertTitle>Success</AlertTitle>
+                  <AlertDescription>
+                    Your email has been submmitted successfully.
+                  </AlertDescription>
+                </Alert>
+              )}
+              {!state.succeeded && (
+                <form
+                  onSubmit={handleSubmit}
+                  className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    // value={email}
+                    // onChange={(e) => setEmail(e.target.value)}
+                    className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
+                  <Button type="submit" disabled={state.submitting}>
+                    Join Waitlist
+                  </Button>
+                </form>
+              )}
             </div>
           </motion.div>
 

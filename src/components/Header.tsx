@@ -30,7 +30,9 @@ export default function Header() {
               Pricing
             </a>
           </nav>
-          <Button>Get Started</Button>
+          <Button>
+            <Link to="/">Join Waitlist</Link>
+          </Button>
         </div>
       </div>
     </header>
