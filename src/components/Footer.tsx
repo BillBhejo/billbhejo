@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Logo } from "./ui/Logo";
 
 export default function Footer() {
@@ -10,7 +11,9 @@ export default function Footer() {
           <div className="mb-4 sm:mb-0 sm:order-first">
             {" "}
             {/* Added mb-4 and sm:order-first */}
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-6 text-center sm:text-left">
             {" "}
