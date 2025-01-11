@@ -12,19 +12,19 @@ export default function Header() {
           </Link>
           <nav className="hidden md:flex space-x-8">
             <a
-              href="#features"
+              href="/#features"
               className="text-gray-600 hover:text-green-600 transition-colors"
             >
               Features
             </a>
             <a
-              href="#how-it-works"
+              href="/#how-it-works"
               className="text-gray-600 hover:text-green-600 transition-colors"
             >
               How it Works
             </a>
             <a
-              href="#pricing"
+              href="/#pricing"
               className="text-gray-600 hover:text-green-600 transition-colors"
             >
               Pricing
