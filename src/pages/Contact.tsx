@@ -262,6 +262,9 @@ import {
   Zap,
   Smartphone,
   FileText,
+  HeartHandshake,
+  Shield,
+  MessageCircle,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -307,7 +310,9 @@ const Contact = () => {
                     <div>
                       <p className="text-sm text-gray-500">Email</p>
                       <p className="text-gray-700 font-medium group-hover:text-green-600">
-                        hello@billbhejo.com
+                        <a href="mailto:hello@billbhejo.com">
+                          hello@billbhejo.com
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -319,15 +324,21 @@ const Contact = () => {
                     <div>
                       <p className="text-sm text-gray-500">Address</p>
                       <p className="text-gray-700 font-medium group-hover:text-green-600">
-                        08th Floor, SLN Terminus,
-                        <br />
-                        Survey No. 133,
-                        <br />
-                        Beside Botanical Gardens,
-                        <br />
-                        Gachibowli, Hyderabad,
-                        <br />
-                        Telangana, 500032, India
+                        <a
+                          href="https://www.google.com/maps/search/08th+Floor,+SLN+Terminus,+Survey+No.+133,+Beside+Botanical+Gardens,+Gachibowli,+Hyderabad,+Telangana,+500032,+India"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          08th Floor, SLN Terminus,
+                          <br />
+                          Survey No. 133,
+                          <br />
+                          Beside Botanical Gardens,
+                          <br />
+                          Gachibowli, Hyderabad,
+                          <br />
+                          Telangana, 500032, India
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -346,47 +357,47 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Product Features */}
+              {/* Our Commitment Section */}
               <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
                 <h2 className="text-2xl font-bold mb-6 text-gray-800">
-                  Why Choose Bill Bhejo?
+                  Our Commitment
                 </h2>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4 p-4 bg-blue-50 rounded-xl">
-                    <Smartphone className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
+                    <MessageCircle className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-gray-800">
-                        WhatsApp Integration
+                        Responsive Support
                       </h3>
                       <p className="text-gray-600 text-sm">
-                        Generate invoices right from your WhatsApp chat - no
-                        additional apps needed.
+                        Quick assistance when you need it most. We're committed
+                        to supporting your business needs.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4 p-4 bg-green-50 rounded-xl">
-                    <FileText className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
+                    <Shield className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-gray-800">
-                        Instant PDF Generation
+                        Data Security
                       </h3>
                       <p className="text-gray-600 text-sm">
-                        Get professional PDF invoices generated instantly after
-                        entering product details.
+                        Your business information is protected with
+                        enterprise-grade security measures.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4 p-4 bg-purple-50 rounded-xl">
-                    <Zap className="w-6 h-6 text-purple-600 mt-1 flex-shrink-0" />
+                    <HeartHandshake className="w-6 h-6 text-purple-600 mt-1 flex-shrink-0" />
                     <div>
                       <h3 className="font-semibold text-gray-800">
-                        Quick & Easy
+                        Merchant Success
                       </h3>
                       <p className="text-gray-600 text-sm">
-                        Simple product input process designed for busy
-                        merchants.
+                        Your growth is our priority. We're here to help
+                        streamline your invoicing process.
                       </p>
                     </div>
                   </div>
@@ -403,24 +414,24 @@ const Contact = () => {
                 <div className="space-y-6">
                   {[
                     {
-                      q: "How does Bill Bhejo work?",
-                      a: "Simply message us on WhatsApp with your product details, and we'll instantly generate a professional PDF invoice for you. No complicated apps or software needed!",
+                      q: "How quickly can I expect a response?",
+                      a: "We typically respond to all inquiries within 2-4 business hours during our support hours (All Days, 9AM-9PM).",
                     },
                     {
-                      q: "What information do I need to provide?",
-                      a: "Just send us basic product details like name, quantity, and price. Our smart system will handle the rest and generate a complete invoice.",
-                    },
-                    // {
-                    //   q: "Can I customize my invoice format?",
-                    //   a: "Yes! We offer various invoice templates and customization options to match your business needs and branding.",
-                    // },
-                    {
-                      q: "Is my business data secure?",
-                      a: "Absolutely. We use end-to-end encryption and secure storage to protect all your business information and transaction details.",
+                      q: "What kind of support do you provide?",
+                      a: "We offer comprehensive support including technical assistance, account help, and general inquiries about our services.",
                     },
                     {
-                      q: "Can I access my previous invoices?",
-                      a: "Yes, all your generated invoices are safely stored and can be easily accessed through our WhatsApp chat interface.",
+                      q: "How do I report an issue?",
+                      a: "You can email us directly at hello@billbhejo.com with details about your concern, and our team will assist you promptly.",
+                    },
+                    {
+                      q: "Do you offer priority support?",
+                      a: "We treat all our merchants with equal priority and strive to provide the fastest possible resolution for every inquiry.",
+                    },
+                    {
+                      q: "Can I get a free trial?",
+                      a: "Yes! You can create your first three invoices for free, so you can try our service before moving to any of our paid plans. Go to our WhatsApp chat to get started.",
                     },
                   ].map((faq, index) => (
                     <div key={index} className="space-y-2">
