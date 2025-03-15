@@ -165,14 +165,14 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-8 tracking-tight font-heading">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 tracking-tight font-heading">
               <span className="block text-gray-900">Create Invoices on</span>
               <span className="bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">
                 WhatsApp Instantly
               </span>
             </h1>
 
-            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+            <p className="text-base sm:text-xl text-gray-600 mb-12 leading-relaxed">
               Transform your WhatsApp chats into professional invoices
               instantly. Create, send, and track invoices right from your
               WhatsApp chat.
